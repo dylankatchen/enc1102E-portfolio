@@ -43,10 +43,10 @@ function App() {
       </section>
 
       {/* Main */}
-      <section className="w-full flex justify-center items-center">
-        <div className=" w-[90%] font-sans flex flex-col py-10">
+      <section className="w-full flex justify-center items-center h-full">
+        <div className=" w-[90%] font-sans flex flex-col pt-5 pb-5 h-full">
           <h1
-            className="text-3xl pl-4 font-bold underline bg-clip-text text-transparent"
+            className="text-5xl pl-4 pb-5 font-bold underline bg-clip-text text-transparent"
             style={{
               backgroundImage: "url('/blurry-gradient-haikei.svg')",
               backgroundSize: "cover",
@@ -55,6 +55,16 @@ function App() {
           >
             Path of Revision
           </h1>
+          <div className='w-full min-h-[500px] h-1/2 bg-gray-800 rounded-4xl text-white'>
+            <h2 className='mx-auto font-bold text-2xl text-center py-4'>Research Paper</h2>
+            <div className='flex flex-row items-center justify-evenly gap-5 w-full h-full'>
+              <div className='w-[200px] h-[350px] bg-blue-500 '> hello</div>
+              <div className='w-[200px] h-[350px] bg-blue-500'>hello</div>
+              <div className='w-[200px] h-[350px] bg-blue-500'>hello</div>
+            </div>
+            <h3>Reflection</h3>
+            <p>gvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb bgvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb b ygvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb b ygvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb b y y</p>
+          </div>
         </div>
       </section>
 
