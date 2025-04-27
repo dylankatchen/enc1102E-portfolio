@@ -19,21 +19,21 @@ function App() {
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Header */}
-      <section className="w-full flex flex-col items-center justify-center bg-gray-800 rounded-b-4xl">
+      <section  className="w-full sticky z-50 top-0 flex flex-col items-center justify-center bg-gray-800 rounded-b-4xl">
         <div
           className="w-[90%] text-white font-sans flex flex-row items-center justify-between py-7 bg-cover bg-center"
           style={{ backgroundImage: "url('/blurry-gradient-haikei.svg')" }}
         >
           <h2 className="text-2xl font-bold pl-4">ePortfolio</h2>
           <div className="flex flex-row items-center justify-center gap-5 pr-5">
-            <a className="font-bold">Home</a>
-            <a className="font-bold">Outcomes</a>
+            <a href='#home' className="font-bold" >Home</a>
+            <a href='#outcomes' className="font-bold">Outcomes</a>
           </div>
         </div>
       </section>
 
       {/* Main */}
-      <section className="w-full flex justify-center items-center h-full">
+      <section id='home' className="w-full flex justify-center items-center h-full">
         <div className="w-[90%] font-sans flex flex-col pt-5 pb-5 h-full">
           <h1
             className="text-5xl pl-4 pb-5 font-bold underline bg-clip-text text-transparent"
@@ -204,14 +204,13 @@ function App() {
             </div>
             <h3 className='px-4 font-bold text-2xl'>Reflection</h3>
             <p className='px-4'>
-              gvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb
-              bgvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb
+              The research paper was a challenging yet rewarding experience. I learned how to effectively gather and analyze information, and how to present it in a clear and concise manner. As you can see in the three renditions of my research paper alot of changes occured along the way. After thorough revisions I made a final paper that I was content with. The feedback from my peers was invaluable, helping me to refine my arguments and improve the overall quality of my writing. Thanks to that feedback and my own revisions I was able to produce a informative and engaging research paper.
             </p>
-            <h2 className="mx-auto font-bold text-2xl text-center py-4">Research Paper</h2>
+            <h2 className="mx-auto font-bold text-2xl text-center py-4">Annotated Bibliography</h2>
             <div className="flex flex-row items-center justify-evenly gap-5 w-full h-full">
               {/* First Div */}
               <a
-              href="/final-Research-paper.pdf"
+              href="/assets/pdfs/annotated-Katchen_SynthesisChart.docx.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="">
@@ -232,11 +231,11 @@ function App() {
                 {/* Cover Photo */}
                 
                   <img
-                    src="/Screenshot 2025-04-23 070505.png"
+                    src="assets/images/Screenshot 2025-04-27 155008.png"
                     alt="Paper 1 Cover"
                     className="w-full h-[70%] object-cover pointer-events-none z-20" // Prevents hover interruption
                   />
-                  <p className="relative z-30 text-center mt-2 pointer-events-none justify-baseline">Paper 1 Title</p>
+                  <p className="relative z-30 text-center mt-2 pointer-events-none justify-baseline">Synthesis Chart</p>
                 </motion.div>
                 {/* Title */}
                 
@@ -271,7 +270,7 @@ function App() {
 
         
               <a
-              href="/final-Research-paper.pdf"
+              href="assets/pdfs/Rough Draft Annotated bibliography-1 (1) 2.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="">
@@ -292,11 +291,11 @@ function App() {
                 {/* Cover Photo */}
                 
                   <img
-                    src="/Screenshot 2025-04-23 070505.png"
+                    src="assets/images/Screenshot 2025-04-27 155741.png"
                     alt="Paper 1 Cover"
                     className="w-full h-[70%] object-cover pointer-events-none z-20" // Prevents hover interruption
                   />
-                  <p className="relative z-30 text-center mt-2 pointer-events-none justify-baseline">Paper 1 Title</p>
+                  <p className="relative z-30 text-center mt-2 pointer-events-none justify-baseline">Rough Draft of Annotated Bibliography</p>
                 </motion.div>
                 {/* Title */}
                 
@@ -331,7 +330,7 @@ function App() {
 
               {/* Third Div */}
               <a
-              href="/final-Research-paper.pdf"
+              href="assets/pdfs/annotatedfinal.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="">
@@ -352,11 +351,11 @@ function App() {
                 {/* Cover Photo */}
                 
                   <img
-                    src="/Screenshot 2025-04-23 070505.png"
+                    src="assets/images/Screenshot 2025-04-27 160123.png"
                     alt="Paper 1 Cover"
                     className="w-full h-[70%] object-cover pointer-events-none z-20" // Prevents hover interruption
                   />
-                  <p className="relative z-30 text-center mt-2 pointer-events-none justify-baseline">Paper 1 Title</p>
+                  <p className="relative z-30 text-center mt-2 pointer-events-none justify-baseline">Final Draft of Annotated Bibiliography</p>
                 </motion.div>
                 {/* Title */}
                 
@@ -365,8 +364,7 @@ function App() {
             </div>
             <h3  className='px-4 font-bold text-2xl'>Reflection</h3>
             <p className='px-4 pb-6'>
-              gvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb
-              bgvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb
+              Producing the annotated bibliography was a tough task given the world of possibilties of what sources to select and how it may affect my research. I started off with the synthesis chart to help me gain a better understanding on how I should synthesize various sources to be used in my annotated bibliography paper. I then moved on to the rough draft, this was a challenging task as I had to find many sources and thoroughly process them to ensure I was using the most valuable resources for the rest of my research. The final draft of the annotated bibliography was produced after plenty of revisions made to the rough draft. I had to use the feedback from my peers and my own revisioning to produce this piece. In the end the thorough and repetetive revisions made from the chart to the rough draft to the final helped me create a proper and complete Annotated Bibliography.
             </p>
           </div>
           
@@ -374,7 +372,7 @@ function App() {
       </section>
 
       {/* accordion */}
-      <section className='w-full flex justify-center items-center h-full'>
+      <section id='outcomes' className='w-full flex justify-center items-center h-full'>
         <div className='w-[90%] font-sans flex flex-col pt-5 pb-5 h-full rounded-4xl'>
         <h1
             className="text-5xl pl-4 pb-5 font-bold underline bg-clip-text text-transparent"
