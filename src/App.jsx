@@ -45,7 +45,7 @@ function App() {
             <div className="flex flex-row items-center justify-evenly gap-5 w-full h-full">
               {/* First Div */}
               <a
-              href="/annotated-AR%20Reserach%20Paper%20ENC1101.docx.pdf"
+              href="assets/pdfs/first-draft-research-paper.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="">
@@ -66,11 +66,11 @@ function App() {
                 {/* Cover Photo */}
                 
                   <img
-                    src="/Screenshot 2025-04-23 070505.png"
+                    src="assets/images/Screenshot 2025-04-26 214457.png"
                     alt="Paper 1 Cover"
                     className="w-full h-[70%] object-cover pointer-events-none z-20" // Prevents hover interruption
                   />
-                  <p className="relative z-30 text-center mt-2 pointer-events-none justify-baseline">Paper 1 Title</p>
+                  <p className="relative z-30 text-center mt-2 pointer-events-none justify-baseline">First Draft of Research Paper</p>
                 </motion.div>
                 {/* Title */}
                 
@@ -105,7 +105,7 @@ function App() {
 
         
               <a
-              href="/annotated-AR%20Reserach%20Paper%20ENC1101.docx.pdf"
+              href="assets/pdfs/rough-draft-research-paper.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="">
@@ -126,11 +126,11 @@ function App() {
                 {/* Cover Photo */}
                 
                   <img
-                    src="/Screenshot 2025-04-23 070505.png"
+                    src="assets/images/Screenshot 2025-04-26 215336.png"
                     alt="Paper 1 Cover"
                     className="w-full h-[70%] object-cover pointer-events-none z-20" // Prevents hover interruption
                   />
-                  <p className="relative z-30 text-center mt-2 pointer-events-none justify-baseline">Paper 1 Title</p>
+                  <p className="relative z-30 text-center mt-2 pointer-events-none justify-baseline">Peer Review of Research Paper</p>
                 </motion.div>
                 {/* Title */}
                 
@@ -165,7 +165,7 @@ function App() {
 
               {/* Third Div */}
               <a
-              href="/annotated-AR%20Reserach%20Paper%20ENC1101.docx.pdf"
+              href="assets/pdfs/final-Research-paper.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="">
@@ -186,11 +186,11 @@ function App() {
                 {/* Cover Photo */}
                 
                   <img
-                    src="/Screenshot 2025-04-23 070505.png"
+                    src="assets/images/Screenshot 2025-04-23 070505.png"
                     alt="Paper 1 Cover"
                     className="w-full h-[70%] object-cover pointer-events-none z-20" // Prevents hover interruption
                   />
-                  <p className="relative z-30 text-center mt-2 pointer-events-none justify-baseline">Paper 1 Title</p>
+                  <p className="relative z-30 text-center mt-2 pointer-events-none justify-baseline">Final Draft of Research Paper</p>
                 </motion.div>
                 {/* Title */}
                 
@@ -206,7 +206,7 @@ function App() {
             <div className="flex flex-row items-center justify-evenly gap-5 w-full h-full">
               {/* First Div */}
               <a
-              href="/annotated-AR%20Reserach%20Paper%20ENC1101.docx.pdf"
+              href="/final-Research-paper.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="">
@@ -266,7 +266,7 @@ function App() {
 
         
               <a
-              href="/annotated-AR%20Reserach%20Paper%20ENC1101.docx.pdf"
+              href="/final-Research-paper.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="">
@@ -326,7 +326,7 @@ function App() {
 
               {/* Third Div */}
               <a
-              href="/annotated-AR%20Reserach%20Paper%20ENC1101.docx.pdf"
+              href="/final-Research-paper.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="">
