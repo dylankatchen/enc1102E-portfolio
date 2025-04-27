@@ -14,7 +14,7 @@ const Accordion = ({ i, expanded, setExpanded, title, description, paperimg1, pa
         }}
         onClick={() => setExpanded(isOpen ? false : i)}
         transition={{ duration: 0.2 }}
-        className="bg-gray-800 first:rounded-t-4xl last:rounded-b-4xl py-8 pl-2 font-bold text-lg cursor-pointer flex justify-between items-center"
+        className="hover:!bg-gray-700 bg-gray-800 first:rounded-t-4xl last:rounded-b-4xl py-8 pl-2 font-bold text-lg cursor-pointer flex justify-between items-center"
       >
         <span>{title}</span>
         {/* Arrow Icon */}
