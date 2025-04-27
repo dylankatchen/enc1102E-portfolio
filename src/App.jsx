@@ -1,9 +1,20 @@
 import './index.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Accordion from './Accordion';
+
 
 function App() {
   const [hoveredIndex, setHoveredIndex] = useState(null); // Track which div is hovered
+  const [expanded, setExpanded] = useState(false);
+  const accordionIds = [
+    { title: "Generating Inquiry", description: "Students will be able to generate and explore genuine lines of inquiry related to writing, language, literacy, and/or rhetoric.", paperimg1: "Screenshot 2025-04-26 214457.png", paperlink1: "assets/pdfs/first-draft-research-paper.pdf",paper1title:"title for this", paperimg2: "Screenshot 2025-04-26 215336.png", paperlink2: "assets/pdfs/rough-draft-research-paper.pdf", paper2title:"title for that", reflection:"gvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb bgvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb" },
+    { title: "Multiple ways of writing", description: "Students will be able to purposefully integrate multimodality, multiple languages, and/or multiliteracies into writing products to support their goals." , paperimg1: "assets/images/Screenshot 2025-04-26 214457.png", paperlink1: "assets/pdfs/first-draft-research-paper.pdf",paper1title:"title for this",paperimg2: "assets/images/Screenshot 2025-04-26 215336.png", paperlink2: "assets/pdfs/rough-draft-research-paper.pdf", paper2title:"title for that", reflection:"gvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb bgvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb"},
+    { title: "Information Literacy", description: " Students will be able to evaluate and act on criteria for relevance, credibility, and ethics when gathering, analyzing, and presenting primary and secondary source materials.", paperimg1: "assets/images/Screenshot 2025-04-26 214457.png", paperlink1: "assets/pdfs/first-draft-research-paper.pdf",paper1title:"title for this",paperimg2: "assets/images/Screenshot 2025-04-26 215336.png", paperlink2: "assets/pdfs/rough-draft-research-paper.pdf", paper2title:"title for that", reflection:"gvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb bgvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb" },
+    { title: "Research Genre Production", description: "Students will be able to produce writing that demonstrates their ability to navigate choices and constraints in a variety of public and/or academic research genres that matter to specific communities.", paperimg1: "assets/images/Screenshot 2025-04-26 214457.png", paperlink1: "assets/pdfs/first-draft-research-paper.pdf",paper1title:"title for this",paperimg2: "assets/images/Screenshot 2025-04-26 215336.png", paperlink2: "assets/pdfs/rough-draft-research-paper.pdf", paper2title:"title for that", reflection:"gvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb bgvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb" },
+    { title: "Contributing Knowledge", description: "Students will be able to draw conclusions based on analysis and interpretation of primary evidence and place that work in conversation with other source materials.", paperimg1: "assets/images/Screenshot 2025-04-26 214457.png", paperlink1: "assets/pdfs/first-draft-research-paper.pdf",paper1title:"title for this",paperimg2: "assets/images/Screenshot 2025-04-26 215336.png", paperlink2: "assets/pdfs/rough-draft-research-paper.pdf", paper2title:"title for that", reflection:"gvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb bgvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb" },
+    { title: "Revision", description: " Students will be able to negotiate differences in and act with intention on feedback from readers when drafting, revising, and editing their writing.", paperimg1: "assets/images/Screenshot 2025-04-26 214457.png", paperlink1: "assets/pdfs/first-draft-research-paper.pdf",paper1title:"title for this",paperimg2: "assets/images/Screenshot 2025-04-26 215336.png", paperlink2: "assets/pdfs/rough-draft-research-paper.pdf", paper2title:"title for that", reflection:"gvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb bgvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb" },
+  ];
 
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -17,12 +28,6 @@ function App() {
           <div className="flex flex-row items-center justify-center gap-5 pr-5">
             <a className="font-bold">Home</a>
             <a className="font-bold">Outcomes</a>
-            <a>outcome 1</a>
-            <a>outcome 1</a>
-            <a>outcome 1</a>
-            <a>outcome 1</a>
-            <a>outcome 1</a>
-            <a>outcome 1</a>
           </div>
         </div>
       </section>
@@ -197,8 +202,8 @@ function App() {
               </motion.div>
               </a>
             </div>
-            <h3>Reflection</h3>
-            <p>
+            <h3 className='px-4 font-bold text-2xl'>Reflection</h3>
+            <p className='px-4'>
               gvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb
               bgvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb
             </p>
@@ -358,8 +363,8 @@ function App() {
               </motion.div>
               </a>
             </div>
-            <h3>Reflection</h3>
-            <p>
+            <h3  className='px-4 font-bold text-2xl'>Reflection</h3>
+            <p className='px-4 pb-6'>
               gvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb
               bgvhbnjutfygvbouhybo oybuiy uyb ybiu uy iuyviuybuiy iuybu iuybuy iuyb
             </p>
@@ -368,8 +373,40 @@ function App() {
         </div>
       </section>
 
-      {/* Blob Animation Section */}
-      <section></section>
+      {/* accordion */}
+      <section className='w-full flex justify-center items-center h-full'>
+        <div className='w-[90%] font-sans flex flex-col pt-5 pb-5 h-full rounded-4xl'>
+        <h1
+            className="text-5xl pl-4 pb-5 font-bold underline bg-clip-text text-transparent"
+            style={{
+              backgroundImage: "url('/blurry-gradient-haikei.svg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            Course Outcomes
+          </h1>
+            <div className="w-full first:rounded-t-4xl last:rounded-b-4xl ">
+              {accordionIds.map((item, i) => (
+                <Accordion
+                  key={i}
+                  i={i}
+                  expanded={expanded}
+                  setExpanded={setExpanded}
+                  title={item.title}
+                  description={item.description}
+                  paperimg1={item.paperimg1}
+                  paperlink1={item.paperlink1}
+                  paper1title={item.paper1title}
+                  paperimg2={item.paperimg2}
+                  paperlink2={item.paperlink2}
+                  paper2title={item.paper2title}
+                  reflection={item.reflection}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
